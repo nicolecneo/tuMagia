@@ -1,0 +1,250 @@
+/* 
+SUBTLE COLOURS
+
+good contrast with white #4E376C
+
+- #9f86c0
+- #d6cfeb
+- #fbf8e8 off-white
+
+
+*/
+
+/* General Styles */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #333;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+}
+
+.heading {
+  font-family: "Playfair Display", sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 12.8rem;
+  padding: 2.4rem 4.8rem;
+}
+
+.logo {
+  height: 9.6rem;
+  width: auto;
+}
+
+.hide {
+  display: none;
+}
+
+#search {
+  display: inline-block;
+}
+
+.btn--service {
+  font-size: 6.4rem;
+  width: 3.2rem;
+  height: 3.2rem;
+  /* flex-shrink: 0; */
+}
+
+.main-nav {
+  height: 4.8rem;
+  background-color: #000;
+}
+
+.main-nav-list {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.main-nav-link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.section-hero {
+  background-image: url(../img/sunset-yoga-crop-2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-width: 100vh;
+  min-height: 100vh;
+  padding: 4.8rem 0;
+  position: relative;
+  /* transform: translate(-50%, -50%); */
+}
+
+.section-hero::after {
+  -moz-box-shadow: inset 0 0 180px #00000083;
+  -webkit-box-shadow: inset 0 0 180px #00000083;
+  box-shadow: inset 0 0 180px #00000083;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* height: 100%; */
+  height: 100%;
+  z-index: 2;
+  content: "";
+}
+
+.hero-grid {
+  width: 130rem;
+  height: auto;
+  margin: 6.4rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: start;
+  align-items: end;
+  justify-items: end;
+}
+
+.hero-text {
+  font-size: 4rem;
+  line-height: 1.05;
+  margin: 3.2rem 0 2.5rem 0;
+  text-align: right;
+}
+
+.span-1 {
+  color: #fbf8e8;
+}
+
+.span-2 {
+  grid-row-start: 3;
+}
+
+.hero-cta {
+  align-self: start;
+  font-size: 2.4rem;
+  grid-row: 2;
+  /* padding-right: 12rem; */
+  line-height: 25px;
+  color: #fbf8e8;
+  text-align: right;
+  margin-bottom: 3.2rem;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  gap: 14rem;
+  /* height: 100%; */
+  width: auto;
+}
+
+.btn--link {
+  transition: all 0.5s;
+  text-align: center;
+  /* border: 1px solid rgb(255, 255, 255); */
+}
+
+.arr-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.link:link,
+.link:visited {
+  transform: rotate(90deg);
+  display: inline-block;
+  color: #fbf8e8;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 4.8rem;
+  text-transform: uppercase;
+  /* border-bottom: 1px solid currentColor; */
+  /* looks better, currentcolor is more reusable maintainable */
+  padding-bottom: 2px;
+}
+
+.link:hover,
+.link:active {
+  color: #fff;
+  /* to remove border bottom when hovering dont use none because it makes screen jump */
+  /* border-bottom: 1px solid transparent; */
+}
+
+.section-products {
+  height: 100vh;
+  /* background-color: #fbf8e8; */
+
+  background: linear-gradient(
+    135deg,
+    #d6fff5 0%,
+    #ffffff 30%,
+    #fffcbda4 65%,
+
+    #ffdfd6 100%
+  );
+}
+
+.product-gallery {
+  /* margin: 0 auto; */
+  height: 100vh;
+  max-width: 130rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  /* gap: 1.6rem; */
+  padding: 1.6rem;
+  background-color: #f8f8e8;
+
+  align-items: center;
+}
+
+.gallery-item {
+  justify-self: center;
+  width: 100%;
+  height: auto;
+}
+
+.gallery-item img {
+  width: 65%;
+  height: auto;
+  transition: all 0.4s;
+}
+
+/* .main-nav-link:link,
+.main-nav-link:visited {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+
+} */
+/* not sure why inline-block, just in case */
